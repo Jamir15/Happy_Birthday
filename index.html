@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="hero setup" id="setupScreen">
+    <p class="subtitle">Enter a name to begin the celebration.</p>
+    <form id="nameForm" class="name-form">
+      <label for="nameInput" class="sr-only">Name</label>
+      <input id="nameInput" class="name-input" type="text" placeholder="Type a name..." required maxlength="40" />
+      <button type="submit" class="btn">Start</button>
+    </form>
+  </main>
+
+  <main class="hero hidden" id="celebrationScreen">
+    <div class="glow"></div>
+    <h1 class="title">Happy Birthday, <span id="personName">Friend</span>!</h1>
+    <button id="celebrateBtn" class="btn">Celebrate</button>
+  </main>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <p class="credit">Created by Dave (2026)</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
